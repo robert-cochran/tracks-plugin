@@ -1,0 +1,7 @@
+tr {
+	border: 10px solid;
+}
+
+tr:hover {
+	background-color: lightblue;
+}

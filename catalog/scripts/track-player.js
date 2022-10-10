@@ -25,6 +25,7 @@
 function createURLRowElem(title, url, storageDivId) {
 	//storage
 	const storageDiv = document.getElementById(storageDivId)
+	storageDiv
 
 	//button
 	const buttonElem = document.createElement('button')
@@ -57,7 +58,9 @@ async function createTrackTable(tracks, tableContainerId, storageDivId){
 	})
 }
 
-
+/**
+ * -------------ExternalSites----------------
+ */
 
 
 
@@ -154,6 +157,11 @@ class Playlist{}
  * ---------------FOCUS PLAYER---------------
  */
 class TrackPlayer {
+	containerDiv;
+	url;
+
+
+
 	constructor(track, containerElementId){
 		this.containerDiv = document.getElementById(containerElementId);
 		this.url = track.url;
@@ -162,20 +170,28 @@ class TrackPlayer {
 			const currentURL = this.containerDiv.getAttribute('url')
 			this.loadURL(currentURL)
 		}
-		const observer = new MutationObserver(attributeCallback);
-		observer.observe(this.containerDiv, trackConfig);
+		const observer = new MutationObserver(attributeCallback); //?
+		observer.observe(this.containerDiv, trackConfig); //? must be for monitoring when something changes to issue a callback?
 		renderReactPlayer(this.containerDiv, { url: this.url, playing: false, controls: true })
 	}
 
-	pause () { renderReactPlayer(this.containerDiv, { url: this.url, playing: false }) }
+	pause () { 
+		renderReactPlayer(
+			this.containerDiv, 
+			{ url: this.url, playing: false }
+		) 
+	}
 	
-	play () { renderReactPlayer(this.containerDiv, { url: this.url, playing: true }) }
+	play () { 
+		renderReactPlayer(
+			this.containerDiv, 
+			{ url: this.url, playing: true }
+		) 
+	}
 
 	loadURL(updatedURL){ 
 		this.url = updatedURL
 		renderReactPlayer(this.containerDiv, { url: updatedURL, playing: true }) 
-		console.log(this.url)
-		// this.containerDiv.setAttribute("src", this.url)
 	}
 }
 
@@ -197,7 +213,6 @@ async function main() {
 	tracks.setCurrentTrack(new Track(config.startingTrackTitle, config.startingTrackURL))
 	const trackPlayer = new TrackPlayer(tracks.getCurrentTrack(), config.containerPlayerElementId)
 	createTrackTable(tracks.tracks, config.trackURLsElemId, config.containerPlayerElementId)
-	
 }
 
 main();

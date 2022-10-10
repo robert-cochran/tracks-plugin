@@ -29,8 +29,7 @@
 			"matches": ["*://*.youtube.com/*"],
 			"js": [
 				"./content/handleTracks.js",
-				"./catalog/track-player.js",
-				"./catalog/ReactPlayer.js"
+				"./catalog/track-player.js"
 			]
 		}
 	],

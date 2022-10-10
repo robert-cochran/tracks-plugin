@@ -202,7 +202,7 @@ class TrackPlayer {
  */
 async function main() {
 	const config = {
-		trackURLsPath: "./initial-tracks.md",
+		trackURLsPath: "./data/initial-tracks.md",
 		containerPlayerElementId: 'containerPlayer',
 		trackURLsElemId: 'tracksTable',
 		startingTrackTitle: 'Nintendo 64 jungle mix 02 - Drum & bass, ragga, atmospheric, intelligent dnb, etc',

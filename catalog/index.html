@@ -5,32 +5,18 @@
 		<link rel="stylesheet" href="./index.css">
         
 		<script src="./scripts/track-player.js"></script>
-		<script src="./scripts/iframe-api.js"></script>
-		<script src="./scripts/widget-api.js"></script>
-		<script src="./scripts/ReactPlayer.standalone.js"></script>
+		<script src="./scripts/ReactPlayer.standalone.js"></script> <!-- https://unpkg.com/react-player@2.11.0/dist/ReactPlayer.standalone.js beautify then replace https://youtube.com/iframe_api with filepath to iframe-api script -->
+		<script src="./scripts/iframe-api.js"></script> <!-- https://www.youtube.com/iframe_api beautify then replace a.src with path to widget-api script -->
+		<script src="./scripts/widget-api.js"></script> <!-- https://www.youtube.com/s/player/17ab0793/www-widgetapi.vflset/www-widgetapi.js -->
 		
     </head>
     <body>
         
         <h1>Focus Radio</h1>
-        
-
 
         <h2>Player</h2>
         <div id="containerPlayer" title="" url=""></div>
-		<!-- <iframe 
-			id="containerPlayer" 
-			title=""
-			url=""
-			type="text/html" 
-			width="640" 
-			height="390"
-			src=""
-			frameborder="0">
-		</iframe> -->
         
-
-
 
         <h2>Tracks</h2>   
 		<!-- <label for="trackListInput">Input New Tracklist URL</label>
@@ -44,122 +30,8 @@
 			</tr>
 		</table> 
 
-
-
-
-
-
-
-
 		<h2>External Sites</h2>
-		<a href="https://musicforprogramming.net/latest/">Music for Programming</a> - 
-		<a href="https://news.ycombinator.com/item?id=32009440">HN</a> 
-		<br>
-		
-		<a href="https://flowful.app">Flowful.app</a> - 
-		<a href="https://news.ycombinator.com/item?id=32149989">HN</a>
-		<br>
-		
-		<a href="https://ambient.li">ambient.li</a>
-		<br>
-
-		<a href="https://lifeat.io">lifeat.io</a>
-		<br>
-
-		<a href="https://plaza.one/">plaza.one</a>
-		<br>
-
-		<a href="https://poolsuite.net/">poolsuite</a>
-		<br>
-
-		<a href="https://lofimusic.app/lofigirl">lofi girl</a>
-		<br>
-
-		<a href="https://drivenlisten.com/#">drive n listen</a> -
-		<a href="https://driveandlisten.herokuapp.com/">alt</a> - 
-		<a href="https://news.ycombinator.com/item?id=23543043">HN</a>
-		<br>
-
-		<a href="https://lofi.chat/">lofi.chat</a>
-		<br>
-
-		<a href="https://lofi.co/home">lofi.co</a>
-		<br>
-
-		<a href="https://www.lofi.cafe/">lofi.cafe</a>
-		<br>
-
-		<a href="https://imissmycafe.com/">imissmycafe</a>
-		<br>
-
-		<a href="https://digs.fm/alskn">digs.fm</a> -
-		<a href="https://news.ycombinator.com/item?id=32551862">HN</a>
-		<br>
-
-		<a href="https://Last.fm">Last.fm</a>
-		<br>
-
-		<a href="https://github.com/milesegan/minimoon">minimoon [cross platform music player]</a>
-		<br>
-
-		<a href="https://github.com/Igglybuff/awesome-piracy#music">awesome-music</a>
-		<br>
-
-		<a href="https://github.com/Tonejs/Tone.js">tone.js</a>
-		<br>
-
-		<a href="https://github.com/sonic-pi-net/sonic-pi">sonic-pi</a>
-		<br>
-
-		<a href="https://github.com/nukeop/nuclear">nuclear</a>
-		<br>
-
-		<a href="https://github.com/scribbletune/scribbletune">scribbletune</a>
-		<br>
-
-		<a href="https://github.com/generative-music/theory">generative music theory</a>
-		<br>
-
-		<a href="https://www.iheart.com">iheart</a>
-		<br>
-
-		<a href="https://player.fm">player.fm</a>
-		<br>
-
-        
-		<a href="https://everynoise.com"/>everynoise</a>
-		<br>
-
-		<a href="lofi.limo">lofi.limo</a>
-		<br>
-
-		<a href="DI.FM">DI.FM</a>
-		<br>
-
-		<a href="https://incoherency.co.uk/blog/stories/nightdrive.html">Nightdrive</a> - 
-		<a href="https://news.ycombinator.com/item?id=32947303">HN</a> - 
-		<a href="https://github.com/jes/nightdrive">Code</a> - 
-		<br>
-
-		<a href="https://rezmason.github.io/drivey/">Drivey</a>
-		<br>
-		
-		<a href=""></a>
-		<br>
-
-		<a href=""></a>
-		<br>
-		<a href=""></a>
-		<br>
-
-		<a href=""></a>
-		<br>
-
-	
-
-		<!-- "./catalog/ReactPlayer.standalone.js",
-		"./catalog/iframe-api.js",
-		"./catalog/widget-api.js" -->
+		<object type="text/html" data="external-sites.html" height="600"></object>
         
     </body>
 </html>

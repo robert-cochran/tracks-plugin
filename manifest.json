@@ -24,22 +24,9 @@
 		"browser_style": true
 	},
 
-	"content_scripts": [
-		{
-			"matches": ["*://*.youtube.com/*"],
-			"js": [
-				"./content/handleTracks.js",
-				"./catalog/track-player.js"
-			]
-		}
-	],
+	
 
-	"background": {
-		"scripts": [
-			"./background/sendNativeMessage.js"
-		],
-		"persistent": true
-	},
+	
 
 	"permissions": [
 		"*://127.0.0.1/*",

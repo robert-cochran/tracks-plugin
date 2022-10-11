@@ -45,3 +45,5 @@ https://www.youtube.com/watch?v=-yFeZekJxZ8
 https://www.youtube.com/watch?v=CfPxlb8-ZQ0
 https://www.youtube.com/watch?v=hM9u0m-yP0o
 https://www.youtube.com/watch?v=XjhzXzaikpU
+http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com
+http://www.youtube.com/embed/VyJXkKWsxko?enablejsapi=1&origin=http://example.com

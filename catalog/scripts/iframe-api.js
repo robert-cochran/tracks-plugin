@@ -37,7 +37,7 @@ if (!YT.loading) {
         var a = document.createElement("script");
         a.type = "text/javascript";
         a.id = "www-widgetapi-script";
-        a.src = './widget-api.js';
+        a.src = './scripts/widget-api.js';
         a.async = true;
         var c = document.currentScript;
         if (c) {

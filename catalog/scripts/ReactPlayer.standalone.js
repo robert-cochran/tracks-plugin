@@ -7899,7 +7899,7 @@ var renderReactPlayer = function(e) {
                         startSeconds: Object(i.g)(e) || d.start,
                         endSeconds: Object(i.f)(e) || d.end
                     });
-                    Object(i.b)("./iframe-api.js", "YT", "onYouTubeIframeAPIReady", (function(e) {
+                    Object(i.b)("./scripts/iframe-api.js", "YT", "onYouTubeIframeAPIReady", (function(e) {
                         return e.loaded
                     })).then((function(t) {
                         n.container && (n.player = new t.Player(n.container, c({
@@ -10554,4 +10554,4 @@ var renderReactPlayer = function(e) {
         }(r.Component);
     m(P, "displayName", "FilePlayer"), m(P, "canPlay", a.m.file)
 }]).default;
-//# sourceMappingURL=ReactPlayer.standalone.js.map
+//# sourceMappingURL=./scripts/ReactPlayer.standalone.js.map

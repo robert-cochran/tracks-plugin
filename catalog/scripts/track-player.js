@@ -190,7 +190,7 @@ class TrackPlayer {
 	}
 
 	loadURL(updatedURL){ 
-		this.url = updatedURL
+		this.url = updatedURL + "?enablejsapi=1"
 		renderReactPlayer(this.containerDiv, { url: updatedURL, playing: true }) 
 	}
 }

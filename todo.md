@@ -3,6 +3,8 @@ todos
 goals: anonymous/accountless, free, easy music saving and sharing for collecting playlists quickly and playing music easily. make youtubes music great again.
   
 # Unsorted
+//TODO reverse engineer the firefox extension for this app https://news.ycombinator.com/item?id=34006202 , it does a lot of the stuff I wanted to do and has a really slick ui. could use their ideas. ALSO reverse engineer the web page for the app, its super slick and would be a great way to navigate my nb instead of the shit nb server webpage it presents
+//TODO consider using the layout from this app https://news.ycombinator.com/item?id=34006202 in designing an updates tracks app for veiwing playlists, creating them, searching, etc..
 //TODO if if move to extension generated index (isntead of github pages) how can i ensure the same level of data persistence like hosting it on github would provide?
     //whatever I do for tracks I could do for external sites, store it as a similar data structure somewhere
 //TODO fix some links not working inside the catalog index.html, requesting to be viewed in youtube (e.g. macroblank) but doesnt happen when played from github pages site
@@ -20,11 +22,14 @@ goals: anonymous/accountless, free, easy music saving and sharing for collecting
 //TODO read this Cache your CORS article https://news.ycombinator.com/item?id=32907234
 //TODO add an option for the plugin to send it to cache, then have option in player to read from cache and save as a url maybe
 //TODO add seashells theme, nightmode theme, css theme from that open source github hosted blog website
+//TODO allow app state to be stored as a url string (which someone has already done here https://news.ycombinator.com/item?id=34312546)
 
 //TODO function that adds tags and can filter based on tags 
 //TODO function that lets me remove tracks from the list inside the index file (thats a powerful feature to add to a public page so maybe not)?
 
 //TODO keyboard command shortcut https://github.com/darktrojan/openwith/blob/master/webextension/manifest.json
+
+//todo see if i cna use this in my quest to make plugin easier to use (and not deal with the whole mozilla plugin access thing https://web.dev/new-patterns-for-amazing-apps/)
 
 # High
 - [ ] get extension working to easily save track urls in browser tab to disk
